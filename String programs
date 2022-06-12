@@ -1,0 +1,409 @@
+//Printing each word of a sentence in separate line
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    StringBuilder s = new StringBuilder("in the horse of ujve box");
+	    String words="";
+	    words+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            System.out.println(words);
+	            words="";
+	           
+	        }
+	    }
+	 
+	}
+	     
+}
+
+
+//Print the first character of each word in a sentence
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            System.out.println(words.charAt(0));
+	            words="";
+	           
+	        }
+	    }
+	 
+	}
+	     
+}
+
+
+//Print the first 2 characters of each word in a sentence
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            System.out.println(words.substring(0,2));
+	            words="";
+	           
+	        }
+	    }
+	 
+	}
+	     
+}
+
+
+//Print a word starting with a particular letter or string
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            if(words.charAt(0)=='t' or words.startsWith('t'){
+	                System.out.println(words);
+	            }
+	            words="";
+	           
+	        }
+	    }
+	 
+	}
+	     
+}
+
+//Print word ending with a particular letter or string
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            if(words.endsWith("e")){
+	                System.out.println(words);
+	            }
+	            words="";
+	           
+	        }
+	    }
+	 
+	}
+	     
+}
+
+// Print word containing a particular letter or string
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            if(words.contains("e")){
+	                System.out.println(words);
+	            }
+	            words="";
+	           
+	        }
+	    }
+	 
+	}
+
+//Find longest word in a sentence in Java
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    String lw="";
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            if(words.length()>lw.length()){
+	                lw=words;
+	            }
+	            words="";
+	           
+	        }
+	    }
+	    System.out.println(lw);
+	 
+	}
+	     
+}
+}
+
+//Find a particular word in a string
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    int c=0;
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            if(words.equalsIgnoreCase("of")){
+	                c+=1;
+	            }
+	            words="";
+	           
+	        }
+	    }
+	    if(c>0){
+	        System.out.println("yes");
+	    }
+	    else{
+	        System.out.println("NO");
+	    }
+	 
+	}
+	     
+}
+
+//Count number of words in a sentence in Java
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    int c=0;
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            c+=1;
+	            words="";
+	           
+	        }
+	    }
+	    System.out.println(c);
+	    
+	}
+	     
+}
+
+
+//Count number of words ending with a particular letter
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String s = new String("in the horse of ujve box");
+	    String words="";
+	    int c=0;
+	    s+=" ";
+	    for(int i=0;i<s.length();i++){
+	        char ch=s.charAt(i);
+	        if(ch!=' '){
+	          words+=ch;  
+	        }
+	        else{
+	            if(words.endsWith("e")){
+	                c+=1;
+	            }
+	            words="";
+	        }
+	    }
+	    System.out.println(c);
+	    
+	}
+	     
+}
+
+//Changing a word with another in Java
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    String s = new String ("in the horse of ujve box");
+    String words = "";
+    String ns = "";
+      s += " ";
+    for (int i = 0; i < s.length (); i++)
+      {
+	char ch = s.charAt (i);
+	if (ch != ' ')
+	  {
+	    words += ch;
+	  }
+	else
+	  {
+	    if (words.startsWith("h"))
+	      {
+		ns = ns + "blue" + " ";
+		words = "";
+	      }
+	    else
+	      {
+		ns += words + " ";
+		words = "";
+
+	      }
+	  }
+
+      }
+      System.out.println(ns);
+
+
+  }
+
+}
+//Changing case of word in Java
+
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    String s = new String ("in the horse of ujve box");
+    String words = "";
+    String ns = "";
+    int c=0;
+      s += " ";
+    for (int i = 0; i < s.length (); i++)
+      {
+	char ch = s.charAt (i);
+	if (ch != ' ')
+	  {
+	    words += ch;
+	  }
+	else
+	  {
+	    c+=1;  
+	    if(c%2==0){
+	        ns=ns+words.toUpperCase()+" ";
+	    }
+	    else{
+	        ns=ns+words.toLowerCase()+" ";
+	    }
+	    words="";
+
+      }
+    
+  }
+  System.out.println(ns);
+  }
+
+}
+
+// Capitalize each word in Java
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    String s = new String ("in the horse of ujve box");
+    String words = "";
+    String ns = "";
+      s += " ";
+    for (int i = 0; i < s.length (); i++)
+      {
+	char ch = s.charAt (i);
+	if (ch != ' ')
+	  {
+	    words += ch;
+	  }
+	else{
+	    char firstletter=words.charAt(0);
+	    char fl=Character.toUpperCase(firstletter);
+	    ns=ns+fl+words.substring(1)+" ";
+	    words="";
+	}
+      }
+      System.out.println(ns);
+  }
+
+}
+
+
+//Swap first and last letter of each word in Java
+public class Main
+{
+  public static void main (String[]args)
+  {
+
+    String s = new String ("in the horse of ujve box");
+    String words = "";
+    String ns = "";
+      s += " ";
+    for (int i = 0; i < s.length (); i++)
+      {
+	char ch = s.charAt (i);
+	if (ch != ' ')
+	  {
+	    words += ch;
+	  }
+	else{
+	    char firstletter=words.charAt(0);
+	    char fl=Character.toUpperCase(firstletter);
+	    char last=words.charAt(words.length()-1);
+	    char ls=Character.toUpperCase(last);
+	    ns=ns+ls+words.substring(1,words.length()-1)+fl+" ";
+	    words="";
+	}
+      }
+      System.out.println(ns);
+  }
+
+}
