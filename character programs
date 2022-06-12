@@ -1,0 +1,131 @@
+//PRINTING EACH CHARACTER IN NEW LINE
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISH MONDI");
+	     for(int i=0;i<s.length();i++){
+	         System.out.println(s.charAt(i));
+	     }
+	}
+}
+
+
+//PRINTING ASCII VALUE OF EACH CHARACTER
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISH MONDI");
+	     for(int i=0;i<s.length();i++){
+	         char ch=s.charAt(i);
+	         System.out.println(ch+":"+(int)ch);
+	     }
+	}
+}
+
+
+//PRINTING LOWERCASE,UPPERCASE,DIGITS,LETTERORDIGIT CHARACTER
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISH MONDI");
+	     for(int i=0;i<s.length();i++){
+	         char ch=s.charAt(i);
+	         if(Character.isLowerCase(ch))
+	            System.out.println(ch);
+	     }
+	}
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISH MONDI");
+	     for(int i=0;i<s.length();i++){
+	         char ch=s.charAt(i);
+	         if(Character.isLetterorDigit(ch))
+	            System.out.println(ch);
+	     }
+	}
+}
+
+//COUNTING THE NUMBER OF UPPERCASE OR LOWERCASE OR DIGITS OF CHARACTERS
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISH MONDI");
+	     int count=0;
+	     for(int i=0;i<s.length();i++){
+	         char ch=s.charAt(i);
+	         if(Character.isUpperCase(ch))
+	            count+=1;
+	     
+	     }
+	     System.out.println(count);
+	}
+}
+
+//PROGRAM TO PRINT ONLY UPPERCASE OR LOWERCASE OR DIGITS
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARIshmoNDI");
+	     String sh="";
+	     for(int i=0;i<s.length();i++){
+	         char ch=s.charAt(i);
+	         if(Character.isUpperCase(ch))
+	            sh=sh+ch;
+	     
+	     }
+	     System.out.println(sh);
+	}
+}
+
+//printing piglatin word
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISHMONDI");
+	     String piglatin="";
+	     for(int i=0;i<s.length();i++){
+	         char p=s.charAt(i);
+	         char l=Character.toUpperCase(p);
+	         if(l=='A' || l=='E' || l=='I' || l=='O' || l=='U'){
+	             if(i==0){
+	                 piglatin=s+"WAY";
+	             }
+	             else{
+	                 piglatin=piglatin.substring(i)+piglatin.substring(0,i)+"AY";
+	             }
+	             break;
+	         }   
+	      System.out.println(piglatin);
+	}
+	     
+}
+
+//Encoding in Java by shifting characters by 2
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	     StringBuffer s=new StringBuffer("HARISHMONDI");
+	     String e="";
+	     for(int i=0;i<s.length();i++){
+	         char u=s.charAt(i);
+	         if(u=='Y'|| u=='Z' ||u=='y' || u=='z'){
+	             u-=26;
+	         u=+2;
+	         e=e+u;
+	         }
+	     }
+	System.out.println(e);
+	}
+	     
+}
